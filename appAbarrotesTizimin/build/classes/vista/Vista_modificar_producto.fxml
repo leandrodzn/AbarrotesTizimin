@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_modificar_producto" prefHeight="614.0" prefWidth="874.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Modificar_productoController">
+   <children>
+      <Label layoutX="341.0" layoutY="37.0" prefHeight="27.0" prefWidth="192.0" text="Modificar producto" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="219.0" prefHeight="27.0" prefWidth="79.0" text="Nombre: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="122.0" prefHeight="27.0" prefWidth="99.0" text="ID producto:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="285.0" prefHeight="27.0" prefWidth="79.0" text="Cantidad:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="346.0" prefHeight="27.0" prefWidth="131.0" text="Precio provedor:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="409.0" prefHeight="27.0" prefWidth="99.0" text="Precio venta:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="470.0" prefHeight="27.0" prefWidth="66.0" text="Puntos:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_Id" layoutX="222.0" layoutY="121.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_nombre" layoutX="222.0" layoutY="220.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_cantidad" layoutX="222.0" layoutY="286.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_precio_provedor" layoutX="222.0" layoutY="347.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_prcio_venta" layoutX="222.0" layoutY="410.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_puntos" layoutX="222.0" layoutY="471.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_salir" layoutX="684.0" layoutY="525.0" mnemonicParsing="false" onAction="#salir" prefHeight="40.0" prefWidth="111.0" styleClass="button4" stylesheets="@../estilos/Estilos.css" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_guardar" layoutX="517.0" layoutY="525.0" mnemonicParsing="false" onAction="#guardar" prefHeight="40.0" prefWidth="111.0" styleClass="button3" stylesheets="@../estilos/Estilos.css" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="LB_id_producto" layoutX="578.0" layoutY="124.0" prefHeight="27.0" prefWidth="149.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_buscar" layoutX="420.0" layoutY="122.0" mnemonicParsing="false" onAction="#buscar" stylesheets="@../estilos/Estilos.css" text="Buscar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

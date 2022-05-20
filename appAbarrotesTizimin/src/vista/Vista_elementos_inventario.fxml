@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_ver_Inventario" prefHeight="700.0" prefWidth="1360.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Vista_elementos_inventarioController">
+   <children>
+      <TableView fx:id="TB_ver_inventario" layoutX="29.0" layoutY="93.0" prefHeight="589.0" prefWidth="1306.0">
+         <columns>
+            <TableColumn fx:id="CLM_id" prefWidth="149.0" text="ID" />
+            <TableColumn fx:id="CLM_nombre" minWidth="0.0" prefWidth="517.0000305175781" text="Nombre" />
+            <TableColumn fx:id="CLM_cantidad" prefWidth="154.0" text="Cantidad" />
+            <TableColumn fx:id="CLM_puntos" prefWidth="139.0" text="Puntos" />
+            <TableColumn fx:id="CLM_precio_proveedor" prefWidth="192.0" text="Precio proveedor" />
+            <TableColumn fx:id="CLM_jprecio_venta" prefWidth="155.0" text="Precion venta" />
+         </columns>
+      </TableView>
+      <Label layoutX="632.0" layoutY="34.0" text="Inventario" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

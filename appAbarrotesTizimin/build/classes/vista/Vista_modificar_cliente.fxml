@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_modificar_cliente" prefHeight="614.0" prefWidth="874.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Vista_modificar_clienteController">
+   <children>
+      <Label layoutX="358.0" layoutY="54.0" prefHeight="27.0" prefWidth="165.0" text="Modificar cliente" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_nombre" layoutX="63.0" layoutY="224.0" prefHeight="27.0" prefWidth="79.0" text="Nombre: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_Id_cliente" layoutX="64.0" layoutY="139.0" prefHeight="27.0" prefWidth="99.0" text="ID Cliente:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_apellido_1" layoutX="59.0" layoutY="263.0" prefHeight="27.0" prefWidth="135.0" text="Apellido paterno:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_ciudad" layoutX="68.0" layoutY="353.0" prefHeight="27.0" prefWidth="66.0" text="Ciudad:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_calle" layoutX="68.0" layoutY="393.0" prefHeight="27.0" prefWidth="46.0" text="Calle:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_nombre" layoutX="209.0" layoutY="225.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_Id_cliente" layoutX="168.0" layoutY="140.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_apellido_1" layoutX="208.0" layoutY="261.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_ciudad" layoutX="137.0" layoutY="354.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_calle" layoutX="136.0" layoutY="394.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_num_casa" layoutX="635.0" layoutY="391.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_salir" layoutX="697.0" layoutY="523.0" mnemonicParsing="false" onAction="#salir" prefHeight="40.0" prefWidth="111.0" styleClass="button4" stylesheets="@../estilos/Estilos.css" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_guardar" layoutX="541.0" layoutY="523.0" mnemonicParsing="false" onAction="#guardar" prefHeight="40.0" prefWidth="111.0" styleClass="button3" stylesheets="@../estilos/Estilos.css" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="LB_apellido_2" layoutX="417.0" layoutY="263.0" prefHeight="27.0" prefWidth="148.0" text="Apellido materno:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_apellido_2" layoutX="574.0" layoutY="261.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LB_estado" layoutX="335.0" layoutY="355.0" prefHeight="27.0" prefWidth="60.0" text="Estado:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_estado" layoutX="405.0" layoutY="353.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LB_telefono" layoutX="417.0" layoutY="219.0" prefHeight="27.0" prefWidth="74.0" text="Teléfono:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_telefono" layoutX="574.0" layoutY="222.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LB_colonia" layoutX="337.0" layoutY="393.0" prefHeight="27.0" prefWidth="67.0" text="Colonia:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_colonia" layoutX="405.0" layoutY="393.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_codigo_postal" layoutX="635.0" layoutY="351.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LB_mensaje" layoutX="143.0" layoutY="470.0" prefHeight="27.0" prefWidth="197.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_num_casa" layoutX="596.0" layoutY="390.0" prefHeight="27.0" prefWidth="36.0" text="N° :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_codigo_postal" layoutX="591.0" layoutY="350.0" prefHeight="27.0" prefWidth="46.0" text="C.P. :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_buscar" layoutX="378.0" layoutY="138.0" mnemonicParsing="false" onAction="#buscar" stylesheets="@../estilos/Estilos.css" text="Buscar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

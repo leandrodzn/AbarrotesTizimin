@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="841.0" prefWidth="1332.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaHacerCompraController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="841.0" prefWidth="1336.0" style="-fx-background-color: #2B2D30;">
+         <children>
+            <Label fx:id="labelIdCliente" layoutX="868.0" layoutY="165.0" prefHeight="21.0" prefWidth="187.0" text="ID del cliente:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TxtIdCliente" layoutX="865.0" layoutY="200.0" prefHeight="37.0" prefWidth="243.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnBuscarCliente" layoutX="865.0" layoutY="257.0" mnemonicParsing="false" onAction="#clickBuscarCliente" prefHeight="37.0" prefWidth="137.0" stylesheets="@../estilos/Estilos.css" text="Buscar cliente" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAgregarCliente" layoutX="1032.0" layoutY="257.0" mnemonicParsing="false" onAction="#clickAgregarCliente" prefHeight="37.0" prefWidth="137.0" stylesheets="@../estilos/Estilos.css" text="Agregar cliente" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelIngresarProducto" layoutX="871.0" layoutY="366.0" prefHeight="25.0" prefWidth="214.0" text="Ingresar el ID del producto:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIngresarProducto" layoutX="871.0" layoutY="400.0" prefHeight="31.0" prefWidth="194.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label fx:id="labelIngresarCantidad" layoutX="872.0" layoutY="449.0" prefHeight="21.0" prefWidth="194.0" text="Ingresar cantidad:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIngresarCantidad" layoutX="872.0" layoutY="481.0" prefHeight="31.0" prefWidth="194.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label fx:id="labelUsarBonos" alignment="CENTER" layoutX="986.0" layoutY="541.0" prefHeight="21.0" prefWidth="187.0" text="Usar bonos" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPagar" layoutX="939.0" layoutY="759.0" mnemonicParsing="false" onAction="#clickPagar" prefHeight="32.0" prefWidth="278.0" styleClass="button3" stylesheets="@../estilos/Estilos.css" text="Pagar" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelPago" alignment="CENTER" layoutX="891.0" layoutY="622.0" prefHeight="21.0" prefWidth="187.0" text="Pago:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelCambio" alignment="CENTER" layoutX="1108.0" layoutY="622.0" prefHeight="21.0" prefWidth="137.0" text="Cambio:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPago" alignment="CENTER" layoutX="884.0" layoutY="653.0" prefHeight="31.0" prefWidth="194.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmboxUsarBonos" layoutX="985.0" layoutY="573.0" prefHeight="31.0" prefWidth="187.0" />
+            <Label fx:id="labelRealizarCompra" alignment="CENTER" contentDisplay="CENTER" layoutX="492.0" layoutY="43.0" prefHeight="35.0" prefWidth="346.0" text="Realizar compra" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCancelarCompra" layoutX="42.0" layoutY="759.0" mnemonicParsing="false" onAction="#clickCancelarCompra" prefHeight="32.0" prefWidth="278.0" styleClass="button2" stylesheets="@../estilos/Estilos.css" text="Cancelar compra" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Text fx:id="txtCambio" fill="WHITE" layoutX="1100.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="153.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tableCompra" layoutX="42.0" layoutY="170.0" prefHeight="520.0" prefWidth="788.0">
+               <columns>
+                  <TableColumn fx:id="colID" editable="false" prefWidth="190.0" text="ID" />
+                  <TableColumn fx:id="colProducto" editable="false" minWidth="9.0" prefWidth="345.0" text="Producto" />
+                  <TableColumn fx:id="colCantidad" editable="false" prefWidth="127.0" text="Cantidad" />
+                  <TableColumn fx:id="colPrecio" editable="false" prefWidth="125.0" text="Precio" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnMenu" layoutX="42.0" layoutY="84.0" mnemonicParsing="false" onAction="#clickMenu" styleClass="button4" stylesheets="@../estilos/Estilos.css" text="Menú" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAgregarProducto" layoutX="1105.0" layoutY="481.0" mnemonicParsing="false" onAction="#clickAgregarProducto" prefHeight="32.0" prefWidth="174.0" stylesheets="@../estilos/Estilos.css" text="Agregar producto" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelTotalCompra" layoutX="616.0" layoutY="700.0" prefHeight="25.0" prefWidth="214.0" text="Total de la compra: " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnVerClientes" layoutX="865.0" layoutY="306.0" mnemonicParsing="false" onAction="#clickVerClientes" prefHeight="37.0" prefWidth="137.0" stylesheets="@../estilos/Estilos.css" text="Ver clientes" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnVerProducto" layoutX="1105.0" layoutY="400.0" mnemonicParsing="false" onAction="#clickVerProducto" prefHeight="32.0" prefWidth="174.0" stylesheets="@../estilos/Estilos.css" text="Ver productos" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnQuitarCliente" layoutX="1032.0" layoutY="306.0" mnemonicParsing="false" onAction="#clickQuitarCliente" prefHeight="37.0" prefWidth="137.0" stylesheets="@../estilos/Estilos.css" text="Quitar cliente" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="labelDescuento" layoutX="329.0" layoutY="706.0" prefHeight="25.0" prefWidth="214.0" text="Descuento:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTotalLista" layoutX="42.0" layoutY="706.0" prefHeight="25.0" prefWidth="214.0" text="Total de la lista:" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Text fx:id="txtCambio1" fill="WHITE" layoutX="1108.0" layoutY="677.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="153.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

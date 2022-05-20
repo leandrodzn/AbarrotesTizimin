@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_lista_clientes" prefHeight="724.0" prefWidth="1427.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Vista_lista_clientesController">
+   <children>
+      <TableView fx:id="TB_lista_clientes" layoutX="27.0" layoutY="95.0" prefHeight="597.0" prefWidth="1392.0">
+         <columns>
+            <TableColumn fx:id="CLM_id" prefWidth="123.0" text="ID" />
+            <TableColumn fx:id="CLM_nombre" minWidth="0.0" prefWidth="238.0" text="Nombre" />
+            <TableColumn fx:id="CLM_apellido_1" prefWidth="153.0" text="Paterno" />
+            <TableColumn fx:id="CLM_apellido_2" prefWidth="149.0" text="Materno" />
+            <TableColumn fx:id="CLM_direccion" prefWidth="515.0" text="Dirección" />
+            <TableColumn fx:id="CLM_telefono" prefWidth="138.0" text="Teléfono" />
+            <TableColumn fx:id="CLM_puntos" prefWidth="75.0" text="Puntos" />
+         </columns>
+      </TableView>
+      <Label layoutX="642.0" layoutY="38.0" text="Clientes" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

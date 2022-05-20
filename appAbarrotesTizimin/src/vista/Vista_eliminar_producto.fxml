@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_eliminar_producto" cacheShape="false" prefHeight="614.0" prefWidth="874.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Vista_eliminar_productoController">
+   <children>
+      <Label layoutX="353.0" layoutY="65.0" prefHeight="27.0" prefWidth="189.0" text="Eliminar producto" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="291.0" prefHeight="27.0" prefWidth="79.0" text="Nombre: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="127.0" prefHeight="27.0" prefWidth="99.0" text="ID producto:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="337.0" prefHeight="27.0" prefWidth="79.0" text="Cantidad:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="384.0" prefHeight="27.0" prefWidth="131.0" text="Precio provedor:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="430.0" prefHeight="27.0" prefWidth="99.0" text="Precio venta:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="477.0" prefHeight="27.0" prefWidth="66.0" text="Puntos:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_Id" layoutX="177.0" layoutY="127.0" prefHeight="30.0" prefWidth="203.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_salir" layoutX="697.0" layoutY="495.0" mnemonicParsing="false" onAction="#salir" prefHeight="40.0" prefWidth="111.0" styleClass="button4" stylesheets="@../estilos/Estilos.css" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_eliminar" layoutX="693.0" layoutY="427.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="40.0" prefWidth="111.0" styleClass="button2" stylesheets="@../estilos/Estilos.css" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="LB_nombre" layoutX="294.0" layoutY="291.0" prefHeight="27.0" prefWidth="149.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_no_encontrado" alignment="CENTER" layoutX="178.0" layoutY="176.0" prefHeight="27.0" prefWidth="202.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_cantidad" layoutX="294.0" layoutY="337.0" prefHeight="27.0" prefWidth="149.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_precio_provedor" layoutX="294.0" layoutY="384.0" prefHeight="27.0" prefWidth="149.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_precio_venta" layoutX="294.0" layoutY="430.0" prefHeight="27.0" prefWidth="149.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_puntos" layoutX="287.0" layoutY="477.0" prefHeight="27.0" prefWidth="149.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="246.0" prefHeight="27.0" prefWidth="87.0" text="Producto" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_buscar" layoutX="404.0" layoutY="126.0" mnemonicParsing="false" onAction="#buscar" stylesheets="@../estilos/Estilos.css" text="Buscar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

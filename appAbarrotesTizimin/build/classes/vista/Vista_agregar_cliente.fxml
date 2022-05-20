@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_agregarCliente" prefHeight="614.0" prefWidth="874.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Vista_agregar_clienteController">
+   <children>
+      <Label layoutX="366.0" layoutY="70.0" prefHeight="27.0" prefWidth="157.0" text="Agregar cliente" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_nombre" layoutX="79.0" layoutY="147.0" prefHeight="27.0" prefWidth="79.0" text="Nombre: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_apellido_1" layoutX="476.0" layoutY="145.0" prefHeight="27.0" prefWidth="135.0" text="Apellido paterno:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_ciudad" layoutX="59.0" layoutY="377.0" prefHeight="27.0" prefWidth="66.0" text="Ciudad:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_calle" layoutX="61.0" layoutY="425.0" prefHeight="27.0" prefWidth="56.0" text="Calle:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_num_casa" layoutX="616.0" layoutY="421.0" prefHeight="27.0" prefWidth="35.0" text="N° :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_nombre" layoutX="221.0" layoutY="197.0" prefHeight="24.0" prefWidth="199.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_apellido_1" layoutX="617.0" layoutY="144.0" prefHeight="30.0" prefWidth="197.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_ciudad" layoutX="128.0" layoutY="378.0" prefHeight="30.0" prefWidth="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_calle" layoutX="130.0" layoutY="422.0" prefHeight="30.0" prefWidth="196.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_num_casa" layoutX="656.0" layoutY="421.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_salir" layoutX="728.0" layoutY="532.0" mnemonicParsing="false" onAction="#salir" prefHeight="40.0" prefWidth="111.0" styleClass="button4" stylesheets="@../estilos/Estilos.css" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_guardar" layoutX="583.0" layoutY="532.0" mnemonicParsing="false" onAction="#guardar" prefHeight="40.0" prefWidth="111.0" styleClass="button3" stylesheets="@../estilos/Estilos.css" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="LB_apellido_2" layoutX="77.0" layoutY="194.0" prefHeight="27.0" prefWidth="140.0" text="Apellido materno:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_apellido_2" layoutX="223.0" layoutY="145.0" prefHeight="30.0" prefWidth="197.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="399.0" layoutY="327.0" prefHeight="31.0" prefWidth="94.0" text="Dirección" textFill="#0fa2a4">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_estado" layoutX="340.0" layoutY="376.0" prefHeight="27.0" prefWidth="60.0" text="Estado:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_estado" layoutX="417.0" layoutY="377.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LB_telefono" layoutX="520.0" layoutY="197.0" prefHeight="27.0" prefWidth="74.0" text="Teléfono:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_telefono" layoutX="617.0" layoutY="198.0" prefHeight="30.0" prefWidth="196.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LB_codigo_postal" layoutX="612.0" layoutY="375.0" prefHeight="27.0" prefWidth="46.0" text="C.P. :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_colonia" layoutX="343.0" layoutY="427.0" prefHeight="27.0" prefWidth="67.0" text="Colonia:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_colonia" layoutX="415.0" layoutY="419.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_codigo_postal" layoutX="656.0" layoutY="375.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="LB_mensaje" layoutX="358.0" layoutY="489.0" prefHeight="27.0" prefWidth="197.0" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

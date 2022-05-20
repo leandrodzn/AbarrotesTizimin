@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_administrador_cliente" prefHeight="614.0" prefWidth="874.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Vista_administrar_clienteController">
+   <children>
+      <Label fx:id="AP_administrador_inventario" alignment="CENTER" layoutX="327.0" layoutY="66.0" prefHeight="27.0" prefWidth="231.0" text="Administrador cliente " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_agregarCliente" layoutX="115.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarCliente" prefHeight="47.0" prefWidth="253.0" stylesheets="@../estilos/Estilos.css" text="Agregar Cliente" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_modificarCliente" layoutX="514.0" layoutY="168.0" mnemonicParsing="false" onAction="#modificarCliente" prefHeight="47.0" prefWidth="253.0" stylesheets="@../estilos/Estilos.css" text="Modificar cliente" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_eliminarCliente" layoutX="119.0" layoutY="288.0" mnemonicParsing="false" onAction="#eliminarCliente" prefHeight="47.0" prefWidth="253.0" stylesheets="@../estilos/Estilos.css" text="Eliminar cliente" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_verClientes" layoutX="517.0" layoutY="286.0" mnemonicParsing="false" onAction="#verClientes" prefHeight="47.0" prefWidth="253.0" stylesheets="@../estilos/Estilos.css" text="Ver clientes" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_salir" layoutX="696.0" layoutY="531.0" mnemonicParsing="false" onAction="#salir" prefHeight="40.0" prefWidth="111.0" styleClass="button4" stylesheets="@../estilos/Estilos.css" text="Menú" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_notificar" layoutX="333.0" layoutY="405.0" mnemonicParsing="false" onAction="#notificar" prefHeight="47.0" prefWidth="243.0" styleClass="button3" stylesheets="@../estilos/Estilos.css" text="Notificar clientes" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* Botones azules */
+.button{
+    -fx-background-color: #1686A2;
+}
+
+.button:hover{
+    -fx-background-color: #2BC0E8;
+}
+
+/* Botones rojos */
+.button2{
+    -fx-background-color: #B22525;
+}
+
+.button2:hover{
+    -fx-background-color: #F4433B;
+}
+
+/* Botones verdes */
+.button3{
+    -fx-background-color: #048560;
+}
+
+.button3:hover{
+    -fx-background-color: #05B784;
+}
+
+/* Botones amarillos */
+.button4{
+    -fx-background-color: #A58110;
+}
+
+.button4:hover{
+    -fx-background-color: #DCAC13;
+}

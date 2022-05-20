@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AP_agregar_producto" prefHeight="614.0" prefWidth="874.0" style="-fx-background-color: #2B2D30;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Vista_agregar_productoController">
+   <children>
+      <Label layoutX="349.0" layoutY="77.0" prefHeight="27.0" prefWidth="180.0" text="Agregar producto" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_nombre" layoutX="93.0" layoutY="216.0" prefHeight="27.0" prefWidth="79.0" text="Nombre: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_Id" layoutX="465.0" layoutY="214.0" prefHeight="27.0" prefWidth="99.0" text="ID producto:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_cantidad" layoutX="96.0" layoutY="291.0" prefHeight="27.0" prefWidth="79.0" text="Cantidad:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_precio_provedor" layoutX="463.0" layoutY="291.0" prefHeight="27.0" prefWidth="131.0" text="Precio provedor:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_precio_venta" layoutX="93.0" layoutY="363.0" prefHeight="27.0" prefWidth="99.0" text="Precio venta:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="LB_puntos" layoutX="466.0" layoutY="360.0" prefHeight="27.0" prefWidth="66.0" text="Puntos:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TXF_nombre" layoutX="229.0" layoutY="217.0" prefHeight="30.0" prefWidth="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_Id" layoutX="602.0" layoutY="215.0" prefHeight="30.0" prefWidth="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_cantidad" layoutX="230.0" layoutY="289.0" prefHeight="30.0" prefWidth="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_precio_provedor" layoutX="604.0" layoutY="293.0" prefHeight="30.0" prefWidth="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_prcio_venta" layoutX="230.0" layoutY="364.0" prefHeight="30.0" prefWidth="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="TXF_puntos" layoutX="603.0" layoutY="362.0" prefHeight="30.0" prefWidth="180.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="BTN_salir" layoutX="704.0" layoutY="511.0" mnemonicParsing="false" onAction="#salir" prefHeight="40.0" prefWidth="111.0" styleClass="button4" stylesheets="@../estilos/Estilos.css" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="BTN_guardar" layoutX="553.0" layoutY="509.0" mnemonicParsing="false" onAction="#guardar" prefHeight="40.0" prefWidth="111.0" styleClass="button3" stylesheets="@../estilos/Estilos.css" text="Guardar" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
